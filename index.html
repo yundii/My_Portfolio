@@ -3,17 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
+  <title>Yundi Tao (Evelyn) - Portfolio</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <!-- Navigation Bar -->
   <nav>
     <div class="container">
-      <a href="#home" class="logo">My Portfolio</a>
+      <a href="#home" class="logo">Yundi Tao (Evelyn)</a>
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -23,8 +25,8 @@
   <!-- Home Section -->
   <section id="home" class="home-section">
     <div class="container">
-      <h1>Hello, I'm [Your Name]</h1>
-      <p>A passionate [Your Profession] creating awesome things.</p>
+      <h1>Hello, I'm Yundi Tao (Evelyn)</h1>
+      <p>A passionate Computer Science graduate student at Northeastern University, specializing in AI, web development, and data analysis.</p>
       <a href="#projects" class="btn">View My Work</a>
     </div>
   </section>
@@ -34,38 +36,83 @@
     <div class="container">
       <h2>About Me</h2>
       <p>
-        Hi! I'm [Your Name], a [Your Profession] with experience in [Your Skills]. 
-        I love building things that make a difference. Here's a bit more about me:
+        I am a Master of Computer Science student at Northeastern University (Vancouver, Canada) with a strong background in financial engineering and software development. 
+        I am passionate about building innovative solutions using AI, web technologies, and data-driven approaches. My goal is to leverage my technical skills to solve real-world problems.
       </p>
+      <h3>Education</h3>
       <ul>
-        <li>Skill 1</li>
-        <li>Skill 2</li>
-        <li>Skill 3</li>
+        <li><strong>Northeastern University</strong> - Master of Computer Science (GPA: 3.96/4.0) | Sep 2023 – Dec 2025 (Expected)</li>
+        <li><strong>Southwestern University of Finance and Economics</strong> - B.S. in Financial Engineering | Sep 2018 – Jun 2022</li>
       </ul>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills-section">
+    <div class="container">
+      <h2>Skills</h2>
+      <ul>
+        <li><strong>Languages:</strong> C/C++, Python, SQL, JavaScript, Node.js, Java, HTML, CSS, STATA, R</li>
+        <li><strong>Frameworks:</strong> ReactJS, React Native, MySQL, Prisma</li>
+        <li><strong>Tools:</strong> Firebase, Git, Linux, Terminal, tmux, Expo, CI/CD</li>
+        <li><strong>Certifications:</strong> AWS ACA, AWS SAA, FRM(I)</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="experience-section">
+    <div class="container">
+      <h2>Work Experience</h2>
+      <div class="experience-item">
+        <h3>AI Research Intern</h3>
+        <p><strong>Virtual Healthcare Technology</strong> | Jan 2025 – Present</p>
+        <ul>
+          <li>Developed Doctor VHT-AI, an LLM-powered doctor-facing assistant providing 90%+ accurate diagnoses and treatment recommendations using Bio-ClinicalBERT.</li>
+          <li>Built a retrieval-augmented generation (RAG) pipeline integrating 500K+ patient records and 1M+ PubMed articles, improving diagnostic retrieval efficiency by 40%.</li>
+          <li>Enhanced data preprocessing and query retrieval, reducing response time by 35%.</li>
+        </ul>
+      </div>
+      <div class="experience-item">
+        <h3>Teaching Assistant for CS5610 (Web Development)</h3>
+        <p><strong>Northeastern University</strong> | Sep 2024 – Present</p>
+        <ul>
+          <li>Assisted students in mastering HTML, CSS, JavaScript, and React, ensuring practical application of web development concepts.</li>
+          <li>Developed automated grading scripts using CI tools to streamline feedback and assessment processes.</li>
+        </ul>
+      </div>
+      <div class="experience-item">
+        <h3>Data Analyst Intern</h3>
+        <p><strong>Southwestern University of Finance and Economics</strong> | Sep 2020 – Dec 2020</p>
+        <ul>
+          <li>Cleaned and standardized 500,000+ records from household finance survey data using STATA, achieving 98%+ data quality.</li>
+          <li>Applied dimensionality reduction techniques, improving processing efficiency by 30%.</li>
+        </ul>
+      </div>
     </div>
   </section>
 
   <!-- Projects Section -->
   <section id="projects" class="projects-section">
     <div class="container">
-      <h2>My Projects</h2>
+      <h2>Projects</h2>
       <div class="project-grid">
         <div class="project-card">
-          <img src="images/project1.jpg" alt="Project 1">
-          <h3>Project 1</h3>
-          <p>Description of Project 1.</p>
+          <h3>Spark – Next-Generation Relationship App</h3>
+          <p><strong>Technologies:</strong> React Native, Node.js, JavaScript, Firebase, Google Maps API, GeoJS API</p>
+          <ul>
+            <li>Built an interest-based matchmaking app with real-time location-based profile discovery for 500+ users.</li>
+            <li>Secured user authentication and privacy controls with Firebase, supporting 250+ daily active users.</li>
+          </ul>
           <a href="#" class="btn">View Project</a>
         </div>
         <div class="project-card">
-          <img src="images/project2.jpg" alt="Project 2">
-          <h3>Project 2</h3>
-          <p>Description of Project 2.</p>
-          <a href="#" class="btn">View Project</a>
-        </div>
-        <div class="project-card">
-          <img src="images/project3.jpg" alt="Project 3">
-          <h3>Project 3</h3>
-          <p>Description of Project 3.</p>
+          <h3>InvestNuxus – Stock Management Website</h3>
+          <p><strong>Technologies:</strong> React, Node.js, JavaScript, MySQL, Prisma, REST APIs</p>
+          <ul>
+            <li>Designed CRUD REST APIs for user authentication, stock exploration, and portfolio management.</li>
+            <li>Integrated real-time stock data from Alpha Vantage API and developed interactive React components.</li>
+          </ul>
           <a href="#" class="btn">View Project</a>
         </div>
       </div>
@@ -89,11 +136,11 @@
   <!-- Footer -->
   <footer>
     <div class="container">
-      <p>&copy; 2023 [Your Name]. All rights reserved.</p>
+      <p>&copy; 2023 Yundi Tao (Evelyn). All rights reserved.</p>
       <ul class="social-links">
-        <li><a href="https://github.com/yourusername" target="_blank">GitHub</a></li>
         <li><a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a></li>
-        <li><a href="https://twitter.com/yourusername" target="_blank">Twitter</a></li>
+        <li><a href="mailto:tao.yun@northeastern.edu">Email</a></li>
+        <li><a href="tel:+17788295474">Phone</a></li>
       </ul>
     </div>
   </footer>
