@@ -77,10 +77,55 @@ body {
   }
   
   .about-section ul li {
-    background: #f4f4f4;
     margin: 0.5rem 0;
-    padding: 0.5rem;
-    border-radius: 5px;
+  }
+  
+  /* Skills Section */
+  .skills-section {
+    padding: 2rem 0;
+  }
+  
+  .skills-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .skills-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .skills-section ul li {
+    margin: 0.5rem 0;
+  }
+  
+  /* Experience Section */
+  .experience-section {
+    padding: 2rem 0;
+  }
+  
+  .experience-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .experience-item {
+    margin-bottom: 2rem;
+  }
+  
+  .experience-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .experience-item p {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .experience-item ul {
+    list-style: disc;
+    padding-left: 1.5rem;
   }
   
   /* Projects Section */
@@ -103,12 +148,20 @@ body {
     background: #f4f4f4;
     padding: 1rem;
     border-radius: 5px;
-    text-align: center;
   }
   
-  .project-card img {
-    max-width: 100%;
-    border-radius: 5px;
+  .project-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .project-card p {
+    margin-bottom: 0.5rem;
+  }
+  
+  .project-card ul {
+    list-style: disc;
+    padding-left: 1.5rem;
   }
   
   /* Contact Section */
