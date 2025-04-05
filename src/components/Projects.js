@@ -6,6 +6,12 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import Carousel from "react-bootstrap/Carousel";
 import ExternalLinks from "./ExternalLinks";
 
+function getYouTubeID(url) {
+  const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|&v=)([^#&?]*).*/;
+  const match = url.match(regExp);
+  return (match && match[2].length === 11) ? match[2] : null;
+}
+
 class Projects extends React.Component {
   constructor() {
     super();
@@ -66,11 +72,20 @@ class Projects extends React.Component {
         <Carousel>
           {Object.keys(spotlightProjects).map((key, i) => (
             <Carousel.Item key={i}>
-              <img
-                className="d-block w-100"
-                src={spotlightProjects[key]["image"]}
-                alt={key}
-              />
+              <div 
+                className="thumbnail-container"
+                onClick={() => window.open(spotlightProjects[key]["open"], "_blank")}
+                style={{ cursor: "pointer" }}
+              >
+                <img
+                  className="d-block w-100"
+                  src={`https://img.youtube.com/vi/${getYouTubeID(spotlightProjects[key]["open"])}/maxresdefault.jpg`}
+                  alt={key}
+                />
+                <div className="play-button">
+                  <i className="fa fa-play-circle"></i>
+                </div>
+              </div>
               <div className="caption-bg">
                 <Carousel.Caption>
                   <h3>{spotlightProjects[key]["title"]}</h3>

@@ -13,7 +13,7 @@ class NavBar extends React.Component {
     return (
       <Navbar fixed="top" className="bg-body-tertiary">
         <Container>
-          <Navbar.Brand href="#">Gazi Jarin</Navbar.Brand>
+          <Navbar.Brand href="#">Yundi Tao</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
@@ -23,7 +23,7 @@ class NavBar extends React.Component {
               <Nav.Link href="#projects">Projects</Nav.Link>
             </Nav>
             <Nav className="ml-auto">
-              <Nav.Link href="mailto:gazijarin@gmail.com">
+              <Nav.Link href="mailto:tao.yun@northeastern.edu">
                 <EmailRoundedIcon style={{ fontSize: 20 }}></EmailRoundedIcon>
               </Nav.Link>
               <Nav.Link href="https://github.com/yundii" target="_blank">
