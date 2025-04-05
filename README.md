@@ -8,7 +8,7 @@
   The first iteration of <a href="https://yundiitao.netlify.app" target="_blank">yundiitao.netlify.app</a> built with React.js leveraging Material UI.
 </p>
 
-<img width="1306" alt="Screen Shot 2025-04-04 at 6 03 PM" src="public/assets/homePage.png">
+<img width="1306" alt="Screen Shot 2025-04-04 at 6 03 PM" src="./public/assets/homePage.jpg">
 
 ## 🛠 set-up
 
