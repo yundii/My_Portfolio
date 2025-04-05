@@ -2,7 +2,6 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import BorderColorIcon from "@material-ui/icons/BorderColor";
 import EmailRoundedIcon from "@material-ui/icons/EmailRounded";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from "@material-ui/icons/GitHub";
@@ -21,6 +20,7 @@ class NavBar extends React.Component {
               <Nav.Link href="#about">About</Nav.Link>
               <Nav.Link href="#experience">Experience</Nav.Link>
               <Nav.Link href="#projects">Projects</Nav.Link>
+              <Nav.Link href="#blog">Blog</Nav.Link>
             </Nav>
             <Nav className="ml-auto">
               <Nav.Link href="mailto:tao.yun@northeastern.edu">
@@ -32,7 +32,6 @@ class NavBar extends React.Component {
               <Nav.Link href="https://www.linkedin.com/in/yunditao5732a/" target="_blank">
                 <LinkedInIcon style={{ fontSize: 21 }}></LinkedInIcon>
               </Nav.Link>
-              
             </Nav>
           </Navbar.Collapse>
         </Container>

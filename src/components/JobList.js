@@ -103,6 +103,14 @@ const JobList = () => {
         "Designed and implemented microservices-based demonstration applications using Docker and Kubernetes, showcasing scalable architecture principles and best practices in system design",
         "Relevant Courses: Data Structures and Algorithms, System Design, Web Development, Operating Systems, Scalable Distributed Systems, Cloud Computing, Database Management Systems"
       ]
+    },
+    "Southwestern University of Finance and Economics": {
+      jobTitle: "Student @",
+      duration: "SEP 2018 - JUN 2022",
+      desc: [
+        "Bachelor of Science in Financial Engineering, Sichuan, China",
+        "Relevant Courses: Financial Econometrics, Fixed Income Securities, Behavioral Finance, Derivative Financial Instruments, Corporate Finance"
+      ]
     }
   };
 
