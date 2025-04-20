@@ -86,10 +86,9 @@ const JobList = () => {
       jobTitle: "Software Engineer - AI @",
       duration: "JAN 2025 - PRESENT",
       desc: [
-        "Architected and implemented Doctor VHT-AI, an LLM-powered doctor-facing assistant leveraging Bio-ClinicalBERT and TensorFlow for medical text representation, achieving 90%+ accuracy in diagnoses and treatment recommendations",
-        "Designed and optimized a retrieval-augmented generation (RAG) pipeline with vector embeddings and semantic search, integrating 500K+ patient records and 1M+ PubMed articles in a distributed vector database, improving diagnostic retrieval efficiency by 40% using PyTorch for model training and fine-tuning",
-        "Enhanced data preprocessing and query retrieval using scikit-learn and spaCy, reducing response time by 35%, and deployed a similarity search mechanism with FAISS, increasing relevant case match rates by 25%",
-        "Applied test-driven development (TDD) with pytest and Jest, achieving 90% code coverage"
+        "Developed Doctor VHT-AI, an LLM-powered assistant using Bio-ClinicalBERT and TensorFlow, achieving 90%+ accuracy in diagnosis and treatment recommendations.",
+        "Designed a scalable RAG pipeline integrating 500K+ patient records and 1M+ PubMed articles via distributed vector databases and FAISS, improving diagnostic retrieval efficiency by 40% and case match rates by 25%",
+        "Optimized preprocessing and semantic search with scikit-learn and spaCy, reducing response time by 35%; applied TDD using pytest and Jest, reaching 90% test coverage",
       ]
     },
     "Northeastern University": {
@@ -100,8 +99,15 @@ const JobList = () => {
         "Teaching Assistant for CS5610 Web Development (September 2024 - Present)",
         "Assisted students in mastering full-stack web development concepts by providing hands-on guidance in HTML, CSS, JavaScript, and React, ensuring comprehensive understanding and practical application",
         "Developed automated grading scripts with Node.js and Python, implementing CI/CD pipelines using GitHub Actions to evaluate student projects, reducing grading time by 40% while providing comprehensive feedback",
-        "Designed and implemented microservices-based demonstration applications using Docker and Kubernetes, showcasing scalable architecture principles and best practices in system design",
-        "Relevant Courses: Data Structures and Algorithms, System Design, Web Development, Operating Systems, Scalable Distributed Systems, Cloud Computing, Database Management Systems"
+        "Designed and implemented microservices-based demonstration applications using Docker and Kubernetes, showcasing scalable architecture principles and best practices in system design"
+      ]
+    },
+    "Southwestern University of Finance and Economics": {
+      jobTitle: "Student @",
+      duration: "SEP 2018 - JUN 2022",
+      desc: [
+        "Bachelor of Science in Financial Engineering, Sichuan, China",
+        "Relevant Courses: Financial Econometrics, Fixed Income Securities, Behavioral Finance, Derivative Financial Instruments, Corporate Finance"
       ]
     }
   };

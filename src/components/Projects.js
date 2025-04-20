@@ -35,7 +35,7 @@ class Projects extends React.Component {
         techStack: "REACT, NODE.JS, MYSQL, PRISMA, AWS",
         link: "https://github.com/yundii/InvestNexus",
         open: "https://www.youtube.com/watch?v=M2_N8s5u4L8",
-        image: "/assets/investnexus.png"
+        image: "/assets/InvestNexus.jpg"
       },
       "Spark": {
         title: "Spark",
@@ -44,7 +44,16 @@ class Projects extends React.Component {
         techStack: "REACT NATIVE, NODE.JS, EXPRESS.JS, FIREBASE",
         link: "https://github.com/YaoyiW27/cs5520-mobile-app",
         open: "https://www.youtube.com/watch?v=dpLnQXJyLyc",
-        image: "/assets/spark.png"
+        image: "/assets/spark.jpg"
+      },
+      "Elevator Rising System": {
+        title: "Elevator Rising System",
+        desc:
+          "A multi-threaded elevator control system in Java with a real-time Swing GUI, remote API integration, and optimized performance through efficient resource management and scalability enhancements.",
+        techStack: "JAVA, SWING, SWINGX, API INTEGRATION",
+        link: "https://github.com/yundii/ElevatorSystem",
+        open: "https://github.com/yundii/ElevatorSystem",
+        image: "/assets/elevator.jpg"
       }
     };
     const projects = {
@@ -61,6 +70,13 @@ class Projects extends React.Component {
         techStack: "JavaScript, React Native, Node.js, Express.js, Expo, Firebase",
         link: "https://github.com/YaoyiW27/cs5520-mobile-app",
         open: "https://www.youtube.com/watch?v=dpLnQXJyLyc"
+      },
+      "Elevator Rising System": {
+        desc:
+          "Developed a multi-threaded elevator control system in Java with a real-time Swing GUI, remote API integration, and optimized performance through efficient resource management and scalability enhancements.",
+        techStack: "Java, Swing, SwingX, API Integration",
+        link: "https://github.com/yundii/ElevatorSystem",
+        open: "https://github.com/yundii/ElevatorSystem"
       }
     };
 
@@ -72,34 +88,25 @@ class Projects extends React.Component {
         <Carousel>
           {Object.keys(spotlightProjects).map((key, i) => (
             <Carousel.Item key={i}>
-              <div 
-                className="thumbnail-container"
-                onClick={() => window.open(spotlightProjects[key]["open"], "_blank")}
-                style={{ cursor: "pointer" }}
-              >
-                <img
-                  className="d-block w-100"
-                  src={`https://img.youtube.com/vi/${getYouTubeID(spotlightProjects[key]["open"])}/maxresdefault.jpg`}
-                  alt={key}
-                />
-                <div className="play-button">
-                  <i className="fa fa-play-circle"></i>
-                </div>
-              </div>
-              <div className="caption-bg">
-                <Carousel.Caption>
-                  <h3>{spotlightProjects[key]["title"]}</h3>
-                  <p>
-                    {spotlightProjects[key]["desc"]}
-                    <p className="techStack">
-                      {spotlightProjects[key]["techStack"]}
-                    </p>
-                  </p>
-                  <ExternalLinks
-                    githubLink={spotlightProjects[key]["link"]}
-                    openLink={spotlightProjects[key]["open"]}
-                  ></ExternalLinks>
-                </Carousel.Caption>
+              <img
+                className="d-block w-100 carousel-image"
+                src={spotlightProjects[key]["image"]}
+                alt={key}
+              />
+              <div className="project-overlay">
+                <h3 className="project-title">
+                  {spotlightProjects[key]["title"]}
+                </h3>
+                <p className="project-desc">
+                  {spotlightProjects[key]["desc"]}
+                </p>
+                <p className="project-tech">
+                  {spotlightProjects[key]["techStack"]}
+                </p>
+                <ExternalLinks
+                  githubLink={spotlightProjects[key]["link"]}
+                  openLink={spotlightProjects[key]["open"]}
+                ></ExternalLinks>
               </div>
             </Carousel.Item>
           ))}

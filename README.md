@@ -21,7 +21,7 @@
 2. Start the development server
 
    ```sh
-   yarn run start
+   npm start
    ```
 
 ## 🚀 build and run for production
@@ -30,6 +30,7 @@
 
    ```sh
    npm run build
+   netlify deploy --prod --dir=build
    ```
 
 

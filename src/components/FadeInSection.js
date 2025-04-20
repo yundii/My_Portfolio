@@ -25,7 +25,7 @@ export default function FadeInSection(props) {
         try {
           observer.disconnect();
         } catch (e) {
-          console.error("清理观察器时出错:", e);
+          console.error("error:", e);
         }
       }
     };

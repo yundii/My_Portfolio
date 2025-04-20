@@ -36,9 +36,8 @@ class Intro extends React.Component {
         <FadeInSection>
           <div className="intro-subtitle">A passionate Full Stack Developer</div>
           <div className="intro-desc">
-            I'm a MSCS student at Northeastern University, Vancouver. I'm fascinated by
-            large-scale, high-impact products and contributed to major feature launches in
-            industry-leading services.
+          I'm an MSCS student at Northeastern University, Vancouver, dedicated to building large-scale, 
+          high-impact products through hands-on projects and continuous learning.
           </div>
           <a
             href="mailto:tao.yun@northeastern.edu"
