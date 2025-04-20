@@ -1,8 +1,8 @@
 #projects {
   margin: auto;
   padding-top: 100px;
-max-width: 1000px;
-min-height: 50vh;
+  max-width: 1000px;
+  min-height: 50vh;
 }
 
 .projects-grid {
@@ -94,12 +94,44 @@ min-height: 50vh;
   transform: scale(1.01);
 }
 
-.carousel img {
-  object-fit: contain;
-  height: 100%;
+.carousel-image {
+  height: 500px;
+  object-fit: cover;
   opacity: 0.5;
 }
 
+.project-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 30px;
+  background-color: transparent;
+  text-align: center;
+  border-radius: 0 0 24px 24px;
+}
+
+.project-title {
+  font-size: 38px;
+  font-weight: bold;
+  color: var(--lightest-slate);
+}
+
+.project-desc {
+  font-family: "NTR", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  color: var(--lightest-slate);
+}
+
+.project-tech {
+  font-family: "NTR", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--green-bright);
+}
+
+/* 保留原有样式但不再使用 */
 .carousel-caption {
   font-family: "NTR", sans-serif;
   max-width: 500px;

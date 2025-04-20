@@ -49,7 +49,7 @@ class Projects extends React.Component {
       "Elevator Rising System": {
         title: "Elevator Rising System",
         desc:
-          "A multi-threaded elevator control system in Java featured real-time Swing GUI, remote API integration, and performance optimizations via efficient resource management and scalability.",
+          "A multi-threaded elevator control system in Java with a real-time Swing GUI, remote API integration, and optimized performance through efficient resource management and scalability enhancements.",
         techStack: "JAVA, SWING, SWINGX, API INTEGRATION",
         link: "https://github.com/yundii/ElevatorSystem",
         open: "https://github.com/yundii/ElevatorSystem",
@@ -88,34 +88,25 @@ class Projects extends React.Component {
         <Carousel>
           {Object.keys(spotlightProjects).map((key, i) => (
             <Carousel.Item key={i}>
-              <div 
-                className="thumbnail-container"
-                onClick={() => window.open(spotlightProjects[key]["open"], "_blank")}
-                style={{ cursor: "pointer" }}
-              >
-                <img
-                  className="d-block w-100"
-                  src={spotlightProjects[key]["image"]}
-                  alt={key}
-                />
-                <div className="play-button">
-                  <i className="fa fa-play-circle"></i>
-                </div>
-              </div>
-              <div className="caption-bg">
-                <Carousel.Caption>
-                  <h3>{spotlightProjects[key]["title"]}</h3>
-                  <p>
-                    {spotlightProjects[key]["desc"]}
-                    <p className="techStack">
-                      {spotlightProjects[key]["techStack"]}
-                    </p>
-                  </p>
-                  <ExternalLinks
-                    githubLink={spotlightProjects[key]["link"]}
-                    openLink={spotlightProjects[key]["open"]}
-                  ></ExternalLinks>
-                </Carousel.Caption>
+              <img
+                className="d-block w-100 carousel-image"
+                src={spotlightProjects[key]["image"]}
+                alt={key}
+              />
+              <div className="project-overlay">
+                <h3 className="project-title">
+                  {spotlightProjects[key]["title"]}
+                </h3>
+                <p className="project-desc">
+                  {spotlightProjects[key]["desc"]}
+                </p>
+                <p className="project-tech">
+                  {spotlightProjects[key]["techStack"]}
+                </p>
+                <ExternalLinks
+                  githubLink={spotlightProjects[key]["link"]}
+                  openLink={spotlightProjects[key]["open"]}
+                ></ExternalLinks>
               </div>
             </Carousel.Item>
           ))}
