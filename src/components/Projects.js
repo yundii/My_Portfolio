@@ -35,7 +35,7 @@ class Projects extends React.Component {
         techStack: "REACT, NODE.JS, MYSQL, PRISMA, AWS",
         link: "https://github.com/yundii/InvestNexus",
         open: "https://www.youtube.com/watch?v=M2_N8s5u4L8",
-        image: "/assets/investnexus.png"
+        image: "/assets/InvestNexus.jpg"
       },
       "Spark": {
         title: "Spark",
@@ -44,7 +44,16 @@ class Projects extends React.Component {
         techStack: "REACT NATIVE, NODE.JS, EXPRESS.JS, FIREBASE",
         link: "https://github.com/YaoyiW27/cs5520-mobile-app",
         open: "https://www.youtube.com/watch?v=dpLnQXJyLyc",
-        image: "/assets/spark.png"
+        image: "/assets/spark.jpg"
+      },
+      "Elevator Rising System": {
+        title: "Elevator Rising System",
+        desc:
+          "A multi-threaded elevator control system in Java featured real-time Swing GUI, remote API integration, and performance optimizations via efficient resource management and scalability.",
+        techStack: "JAVA, SWING, SWINGX, API INTEGRATION",
+        link: "https://github.com/yundii/ElevatorSystem",
+        open: "https://github.com/yundii/ElevatorSystem",
+        image: "/assets/elevator.jpg"
       }
     };
     const projects = {
@@ -61,6 +70,13 @@ class Projects extends React.Component {
         techStack: "JavaScript, React Native, Node.js, Express.js, Expo, Firebase",
         link: "https://github.com/YaoyiW27/cs5520-mobile-app",
         open: "https://www.youtube.com/watch?v=dpLnQXJyLyc"
+      },
+      "Elevator Rising System": {
+        desc:
+          "Developed a multi-threaded elevator control system in Java with a real-time Swing GUI, remote API integration, and optimized performance through efficient resource management and scalability enhancements.",
+        techStack: "Java, Swing, SwingX, API Integration",
+        link: "https://github.com/yundii/ElevatorSystem",
+        open: "https://github.com/yundii/ElevatorSystem"
       }
     };
 
@@ -79,7 +95,7 @@ class Projects extends React.Component {
               >
                 <img
                   className="d-block w-100"
-                  src={`https://img.youtube.com/vi/${getYouTubeID(spotlightProjects[key]["open"])}/maxresdefault.jpg`}
+                  src={spotlightProjects[key]["image"]}
                   alt={key}
                 />
                 <div className="play-button">

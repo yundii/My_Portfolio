@@ -21,7 +21,7 @@ class About extends React.Component {
       <p>
         I am currently pursuing a <b>Master of Computer Science</b> at
         <a href="https://www.northeastern.edu/"> Northeastern University</a> in Vancouver, Canada 
-        (GPA: 3.96/4.0). I also work as a <b>Software Engineer - AI</b> at
+        (GPA: 3.96/4.0). I also work as a <b>Software Engineer</b> at
         <a href="#"> Virtual Healthcare Technology</a> and serve as a 
         <b> Teaching Assistant</b> for CS5610 (Web Development).
       </p>
@@ -68,7 +68,7 @@ class About extends React.Component {
               {[two]}
             </div>
             <div className="about-image">
-              <img alt="Profile" src={"/assets/me2.jpg"} />
+              <img alt="Profile" src={"/assets/me.jpg"} />
             </div>
           </div>
         </FadeInSection>
