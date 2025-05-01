@@ -83,7 +83,7 @@ const JobList = () => {
 
   const experienceItems = {
     "Virtual Healthcare Technology": {
-      jobTitle: "Software Engineer - AI @",
+      jobTitle: "Machine Learning Engineer @",
       duration: "JAN 2025 - PRESENT",
       desc: [
         "Developed Doctor VHT-AI, an LLM-powered assistant using Bio-ClinicalBERT and TensorFlow, achieving 90%+ accuracy in diagnosis and treatment recommendations.",
