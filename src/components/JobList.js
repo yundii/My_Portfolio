@@ -95,7 +95,7 @@ const JobList = () => {
       jobTitle: "Teaching Assistant & Student @",
       duration: "SEP 2023 - DEC 2025 (EXPECTED)",
       desc: [
-        "Master of Computer Science (GPA: 3.96 / 4.0)",
+        "Master of Computer Science (GPA: 3.97 / 4.0)",
         "Teaching Assistant for CS5610 Web Development (September 2024 - Present)",
         "Assisted students in mastering full-stack web development concepts by providing hands-on guidance in HTML, CSS, JavaScript, and React, ensuring comprehensive understanding and practical application",
         "Developed automated grading scripts with Node.js and Python, implementing CI/CD pipelines using GitHub Actions to evaluate student projects, reducing grading time by 40% while providing comprehensive feedback",
@@ -104,7 +104,7 @@ const JobList = () => {
     },
     "Southwestern University of Finance and Economics": {
       jobTitle: "Student @",
-      duration: "SEP 2018 - JUN 2022",
+      duration: "SEP 2019 - JUN 2023",
       desc: [
         "Bachelor of Science in Financial Engineering, Sichuan, China",
         "Relevant Courses: Financial Econometrics, Fixed Income Securities, Behavioral Finance, Derivative Financial Instruments, Corporate Finance"

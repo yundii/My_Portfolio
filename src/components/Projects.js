@@ -66,8 +66,8 @@ class Projects extends React.Component {
       },
       "Spark": {
         desc:
-          "Developed a robust CI/CD pipeline with GitHub Actions, Docker, and Kubernetes, cutting deployment time by 55%.",
-        techStack: "JavaScript, React Native, Node.js, Express.js, Expo, Firebase",
+          "Architected and built a scalable full-stack mobile dating app with React Native, Node.js, and Firebase, featuring real-time messaging, microservices, and global state management to support 1,000+ concurrent users with 99.9% uptime.",
+        techStack: "JavaScript, React Native, Node.js, Express.js, Expo, Firebase, Figma",
         link: "https://github.com/YaoyiW27/cs5520-mobile-app",
         open: "https://www.youtube.com/watch?v=dpLnQXJyLyc"
       },
