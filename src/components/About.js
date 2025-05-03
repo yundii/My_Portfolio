@@ -21,7 +21,7 @@ class About extends React.Component {
       <p>
         I am currently pursuing a <b>Master of Computer Science</b> at
         <a href="https://www.northeastern.edu/"> Northeastern University</a> in Vancouver, Canada 
-        (GPA: 3.97/4.0). I also work as a <b>Machine Learning Engineer</b> at
+        (GPA: 3.97/4.0). I also work as a <b>AI Research Engineer</b> at
         <a href="#"> Virtual Healthcare Technology</a> and serve as a 
         <b> Teaching Assistant</b> for CS5610 (Web Development).
       </p>
