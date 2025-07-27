@@ -93,7 +93,7 @@ const JobList = () => {
     },
     "Northeastern University": {
       jobTitle: "Teaching Assistant & Student @",
-      duration: "SEP 2023 - DEC 2025 (EXPECTED)",
+      duration: "SEP 2023 - Aug 2026 (EXPECTED)",
       desc: [
         "Master of Computer Science (GPA: 3.97 / 4.0)",
         "Teaching Assistant for CS5610 Web Development (September 2024 - Present)",
@@ -104,7 +104,7 @@ const JobList = () => {
     },
     "Southwestern University of Finance and Economics": {
       jobTitle: "Student @",
-      duration: "SEP 2019 - JUN 2023",
+      duration: "SEP 2018 - JUN 2022",
       desc: [
         "Bachelor of Science in Financial Engineering, Sichuan, China",
         "Relevant Courses: Financial Econometrics, Fixed Income Securities, Behavioral Finance, Derivative Financial Instruments, Corporate Finance"
