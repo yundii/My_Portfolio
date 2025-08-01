@@ -31,8 +31,8 @@ class Projects extends React.Component {
       "InvestNexus": {
         title: "InvestNexus",
         desc:
-          "A financial platform designed with Node.js, Prisma, and MySQL, creating RESTful APIs with N+1 query optimization to support 3,000+ concurrent users, ensuring 98% uptime on AWS EC2.",
-        techStack: "REACT, NODE.JS, MYSQL, PRISMA, AWS",
+          "Real-time investment dashboard with React, Node.js, MySQL, and Prisma. Integrated Redis caching and WebSocket to reduce latency by 60%, deployed on AWS EC2 with Auto Scaling for optimal performance.",
+        techStack: "REACT, NODE.JS, MYSQL, PRISMA, REDIS, AWS, WEBSOCKET",
         link: "https://github.com/yundii/InvestNexus",
         open: "https://www.youtube.com/watch?v=M2_N8s5u4L8",
         image: "/assets/InvestNexus.jpg"
@@ -58,9 +58,8 @@ class Projects extends React.Component {
     };
     const projects = {
       "InvestNexus": {
-        desc:
-          "Engineered a responsive front-end with React and Material-UI, implementing lazy loading and code splitting to reduce initial load time by 45% and improve Core Web Vitals metrics.",
-        techStack: "React, Node.js, MySQL, Prisma, AWS EC2, Redis",
+        desc: "Developed a scalable backend architecture with Node.js and Prisma ORM, implementing efficient database queries and API optimization to handle 3,000+ concurrent users with 98% uptime on AWS EC2.",
+        techStack: "React, Node.js, MySQL, Prisma, AWS EC2, Redis, WebSocket",
         link: "https://github.com/yundii/InvestNexus",
         open: "https://www.youtube.com/watch?v=M2_N8s5u4L8"
       },

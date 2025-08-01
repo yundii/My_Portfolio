@@ -19,32 +19,35 @@ class About extends React.Component {
   render() {
     const one = (
       <p>
-        I am currently pursuing a <b>Master of Computer Science</b> at
-        <a href="https://www.northeastern.edu/"> Northeastern University</a> in Vancouver, Canada 
-        (GPA: 3.97/4.0). I also work as a <b>AI Research Engineer</b> at
-        <a href="#"> Virtual Healthcare Technology</a> and serve as a 
-        <b> Teaching Assistant</b> for CS5610 (Web Development).
+        I’m a <b>Master of Computer Science</b> student at 
+        <a href="https://www.northeastern.edu/"> Northeastern University</a> (GPA: 3.97), 
+        currently interning as a <b>Frontend Engineer</b> at 
+        <a href="#"> Vosyn</a>. I’ve also worked as an <b>AI Research Intern</b> building 
+        clinical search pipelines, and as a <b>Teaching Assistant</b> for Web Development.
       </p>
     );
+    
+    
     const two = (
       <p>
-        My professional experience includes developing LLM-powered healthcare solutions, 
-        implementing retrieval-augmented generation (RAG) pipelines, and building 
-        scalable web and mobile applications. I'm passionate about AI, cloud computing, 
-        and building efficient software systems.
+        I’m passionate about <b>AI</b> and <b>full-stack development</b>, with experience in 
+        building multilingual UIs, semantic search systems, and real-time web apps. I enjoy 
+        creating clean, scalable software that solves real-world problems.
       </p>
     );
+    
 
     const tech_stack = [
       "JavaScript",
-      "TypeScript",
       "React",
-      "Node.js",
       "Python",
-      "Java",
+      "Redux",
+      "Docker",
+      "Kubernetes",
       "AWS",
-      "Docker"
+      "PyTorch",
     ];
+    
 
     return (
       <div id="about">
