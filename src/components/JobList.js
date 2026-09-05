@@ -83,7 +83,7 @@ const JobList = () => {
 
   const experienceItems = {
     "Vosyn": {
-      jobTitle: "Frontend Engineering Intern @",
+      jobTitle: "Software Engineer Intern @",
       duration: "May 2025 – Present",
       desc: [
         "Developed responsive UI modules for Vosyn Verse, a B2C global content platform, using React, TypeScript, and Figma design specifications",
@@ -93,7 +93,7 @@ const JobList = () => {
       ]
     },
     "Virtual Healthcare Technology": {
-      jobTitle: "AI Research Intern @",
+      jobTitle: "AI Engineer Intern @",
       duration: "JAN 2025 - APR 2025",
       desc: [
         "Designed a two-stage semantic search pipeline using FAISS and Bio-ClinicalBERT to retrieve relevant patient cases and PubMed literature, enhancing retrieval accuracy for medical diagnosis",

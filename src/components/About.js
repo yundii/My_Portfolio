@@ -19,10 +19,10 @@ class About extends React.Component {
   render() {
     const one = (
       <p>
-        I’m a <b>Master of Computer Science</b> student at 
-        <a href="https://www.northeastern.edu/"> Northeastern University</a> (GPA: 3.97), 
-        currently interning as a <b>Frontend Engineer</b> at 
-        <a href="#"> Vosyn</a>. I’ve also worked as an <b>AI Research Intern</b> building 
+        I’m a <b>Master of Computer Science</b> student at
+        <a href="https://www.northeastern.edu/"> Northeastern University</a> (GPA: 3.97),
+        and I interned as a <b>Software Engineer</b> at
+        <a href="#"> Vosyn</a>. I’ve also worked as an <b>AI Engineer Intern</b> building
         clinical search pipelines, and as a <b>Teaching Assistant</b> for Web Development.
       </p>
     );
