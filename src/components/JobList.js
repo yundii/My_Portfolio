@@ -82,31 +82,42 @@ const JobList = () => {
   const [value, setValue] = React.useState(0);
 
   const experienceItems = {
-    "Virtual Healthcare Technology": {
-      jobTitle: "Software Engineer - AI @",
-      duration: "JAN 2025 - PRESENT",
+    "Vosyn": {
+      jobTitle: "Software Engineer Intern @",
+      duration: "May 2025 – Present",
       desc: [
-        "Developed Doctor VHT-AI, an LLM-powered assistant using Bio-ClinicalBERT and TensorFlow, achieving 90%+ accuracy in diagnosis and treatment recommendations.",
-        "Designed a scalable RAG pipeline integrating 500K+ patient records and 1M+ PubMed articles via distributed vector databases and FAISS, improving diagnostic retrieval efficiency by 40% and case match rates by 25%",
-        "Optimized preprocessing and semantic search with scikit-learn and spaCy, reducing response time by 35%; applied TDD using pytest and Jest, reaching 90% test coverage",
+        "Developed responsive UI modules for Vosyn Verse, a B2C global content platform, using React, TypeScript, and Figma design specifications",
+        "Built cross-platform multilingual search interface for Vosyn Assist (AI-powered search) supporting video, audio, and text formats, boosting accessibility by 40%",
+        "Engineered modular widget systems with expand/collapse transitions and adaptive layouts using CSS Flexbox/Grid and React state management, improving UX responsiveness",
+        "Created reusable content card components displaying consistent metadata across formats, enhancing component reusability by 60% and reducing navigation friction across devices"
+      ]
+    },
+    "Virtual Healthcare Technology": {
+      jobTitle: "AI Engineer Intern @",
+      duration: "JAN 2025 - APR 2025",
+      desc: [
+        "Designed a two-stage semantic search pipeline using FAISS and Bio-ClinicalBERT to retrieve relevant patient cases and PubMed literature, enhancing retrieval accuracy for medical diagnosis",
+        "Constructed top-k coarse retrieval using cosine similarity on patient embeddings and reranked literature for improved medical relevance, boosting model confidence by 22%",
+        "Optimized text preprocessing pipeline with spaCy and PyTorch for medical entity recognition and vector encoding, achieving 30% faster search throughput",
+        "Reduced latency by 35% through pre-encoded databases and query optimization, enabling near real-time clinical assistance while enhancing semantic accuracy by 18%"
       ]
     },
     "Northeastern University": {
       jobTitle: "Teaching Assistant & Student @",
-      duration: "SEP 2023 - DEC 2025 (EXPECTED)",
+      duration: "SEP 2023 - Aug 2026 (EXPECTED)",
       desc: [
-        "Master of Computer Science (GPA: 3.96 / 4.0)",
-        "Teaching Assistant for CS5610 Web Development (September 2024 - Present)",
-        "Assisted students in mastering full-stack web development concepts by providing hands-on guidance in HTML, CSS, JavaScript, and React, ensuring comprehensive understanding and practical application",
-        "Developed automated grading scripts with Node.js and Python, implementing CI/CD pipelines using GitHub Actions to evaluate student projects, reducing grading time by 40% while providing comprehensive feedback",
-        "Designed and implemented microservices-based demonstration applications using Docker and Kubernetes, showcasing scalable architecture principles and best practices in system design"
+        "Master of Computer Science (GPA: 3.97 / 4.0)",
+        "Teaching Assistant for CS5610 Web Development (September 2024 - April 2025)",
+        "Assisted 40+ students in mastering React, HTML/CSS, and JavaScript through office hours and code reviews, improving pass rates by 18%",
+        "Built grading scripts integrated with GitHub Actions and Node.js to support faster feedback cycles and CI testing, reducing instructor workload by 30%"
       ]
     },
     "Southwestern University of Finance and Economics": {
       jobTitle: "Student @",
       duration: "SEP 2018 - JUN 2022",
       desc: [
-        "Bachelor of Science in Financial Engineering, Sichuan, China",
+        "Bachelor of Science in Financial Engineering, Sichuan, China (GPA: 3.5 / 4.0)",
+        "Passed FRM Level 1 and CFA Level 1",
         "Relevant Courses: Financial Econometrics, Fixed Income Securities, Behavioral Finance, Derivative Financial Instruments, Corporate Finance"
       ]
     }
