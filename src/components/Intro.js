@@ -40,7 +40,7 @@ class Intro extends React.Component {
           high-impact products through hands-on projects and continuous learning.
           </div>
           <a
-            href="mailto:tao.yun@northeastern.edu"
+            href="mailto:yundi.tao@outlook.com"
             className="intro-contact"
           >
             <EmailRoundedIcon></EmailRoundedIcon>

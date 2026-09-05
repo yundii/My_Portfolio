@@ -23,7 +23,7 @@ class NavBar extends React.Component {
               <Nav.Link href="#blog">Blog</Nav.Link>
             </Nav>
             <Nav className="ml-auto">
-              <Nav.Link href="mailto:tao.yun@northeastern.edu">
+              <Nav.Link href="mailto:yundi.tao@outlook.com">
                 <EmailRoundedIcon style={{ fontSize: 20 }}></EmailRoundedIcon>
               </Nav.Link>
               <Nav.Link href="https://github.com/yundii" target="_blank">

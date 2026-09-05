@@ -84,7 +84,7 @@ const JobList = () => {
   const experienceItems = {
     "Vosyn": {
       jobTitle: "Software Engineer Intern @",
-      duration: "May 2025 – Present",
+      duration: "May 2025 – August 2025",
       desc: [
         "Developed responsive UI modules for Vosyn Verse, a B2C global content platform, using React, TypeScript, and Figma design specifications",
         "Built cross-platform multilingual search interface for Vosyn Assist (AI-powered search) supporting video, audio, and text formats, boosting accessibility by 40%",
