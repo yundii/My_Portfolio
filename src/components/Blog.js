@@ -20,6 +20,24 @@ class Blog extends React.Component {
   render() {
     const blogPosts = [
       {
+        "title": "Full-Stack in 2026: Designing Permissions for AI Agents",
+        "date": "August 2026",
+        "description": "Why agent-powered apps need task-scoped access, visible approval flows, and reliable recovery across the frontend and backend.",
+        "link": "/blog/full-stack-agent-permissions.html"
+},
+      {
+        "title": "Beyond Code Generation: The Full-Stack Engineer\u2019s Verification Loop",
+        "date": "March 2026",
+        "description": "How long-running coding agents shift attention toward clear acceptance criteria, browser checks, and reviewable changes.",
+        "link": "/blog/agentic-coding-verification.html"
+},
+      {
+        "title": "AI Engineering in 2026: Evals Before More Prompts",
+        "date": "January 2026",
+        "description": "A practical look at evaluating tool-using agents through repeatable tasks, outcome checks, and production-relevant failure cases.",
+        "link": "/blog/ai-agent-evals.html"
+},
+      {
         title: "Building Scalable RAG Systems",
         date: "April 12, 2025",
         description: "How I implemented a retrieval-augmented generation pipeline with vector embeddings to enhance AI-powered healthcare applications.",
@@ -56,6 +74,7 @@ class Blog extends React.Component {
                       target="_blank" 
                       rel="noopener noreferrer" 
                       className="blog-post-link"
+                      aria-label={`Read ${post.title}`}
                     >
                       <OpenInNewIcon style={{ fontSize: 20 }} />
                     </a>
