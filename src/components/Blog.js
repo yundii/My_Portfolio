@@ -40,20 +40,23 @@ class Blog extends React.Component {
       {
         title: "Building Scalable RAG Systems",
         date: "April 12, 2025",
-        description: "How I implemented a retrieval-augmented generation pipeline with vector embeddings to enhance AI-powered healthcare applications.",
-        link: "https://medium.com/@yunditao/building-scalable-rag-systems"
+        source: "AWS Prescriptive Guidance",
+        description: "AWS guidance on RAG architecture options, managed services, and the trade-offs involved in building retrieval-augmented applications.",
+        link: "https://docs.aws.amazon.com/prescriptive-guidance/latest/retrieval-augmented-generation-options/introduction.html"
       },
       {
         title: "React Performance Optimization Techniques",
         date: "March 3, 2025",
-        description: "Exploring code splitting, memoization, and virtual DOM optimization strategies that improved our application load time by 45%.",
-        link: "https://medium.com/@yunditao/react-performance-optimization"
+        source: "React documentation",
+        description: "The official React guide to loading components on demand with lazy and Suspense, including code-splitting examples and common pitfalls.",
+        link: "https://react.dev/reference/react/lazy"
       },
       {
         title: "Distributed Systems Design Patterns",
         date: "January 22, 2025",
-        description: "An overview of key design patterns I've implemented in distributed systems, with practical examples from recent projects.",
-        link: "https://medium.com/@yunditao/distributed-systems-design-patterns"
+        source: "Microsoft Learn",
+        description: "Microsoft’s catalog of cloud design patterns for distributed systems, with practical trade-offs for reliability, scalability, and performance.",
+        link: "https://learn.microsoft.com/en-us/azure/architecture/patterns/"
       }
     ];
 
@@ -79,7 +82,7 @@ class Blog extends React.Component {
                       <OpenInNewIcon style={{ fontSize: 20 }} />
                     </a>
                   </div>
-                  <p className="blog-post-date">{post.date}</p>
+                  <p className="blog-post-date">{post.date}{post.source && ` · Recommended reading · ${post.source}`}</p>
                   <p className="blog-post-description">{post.description}</p>
                   <a 
                     href={post.link} 
