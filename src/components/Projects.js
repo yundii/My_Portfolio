@@ -28,6 +28,15 @@ class Projects extends React.Component {
   }
   render() {
     const spotlightProjects = {
+      "Pulse Lab": {
+        title: "Pulse Lab",
+        desc:
+          "An interactive 3D soft-body heart with real-time physics. Drag and stretch the tissue, watch its rhythm respond to touch, and explore adjustable material and heartbeat controls.",
+        techStack: "REACT, TYPESCRIPT, THREE.JS, WEBGPU, WEBGL2, VITE, XPBD",
+        link: "https://github.com/yundii/pulse-lab",
+        open: "https://yundii.github.io/pulse-lab/",
+        image: "/assets/pulse-lab.png"
+      },
       "InvestNexus": {
         title: "InvestNexus",
         desc:
