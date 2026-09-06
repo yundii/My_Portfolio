@@ -57,6 +57,13 @@ class Projects extends React.Component {
       }
     };
     const projects = {
+      "Pulse Lab": {
+        desc:
+          "An interactive 3D soft-body heart with real-time physics. Drag and stretch the tissue, watch its rhythm respond to touch, and experiment with color, heart rate, contraction, stiffness, and damping.",
+        techStack: "React, TypeScript, Three.js, WebGPU, WebGL2, Vite, XPBD",
+        link: "https://github.com/yundii/pulse-lab",
+        open: "https://yundii.github.io/pulse-lab/"
+      },
       "InvestNexus": {
         desc: "Developed a scalable backend architecture with Node.js and Prisma ORM, implementing efficient database queries and API optimization to handle 3,000+ concurrent users with 98% uptime on AWS EC2.",
         techStack: "React, Node.js, MySQL, Prisma, AWS EC2, Redis, WebSocket",
