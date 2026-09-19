@@ -131,7 +131,7 @@
   color: var(--green-bright);
 }
 
-/* 保留原有样式但不再使用 */
+/* Legacy carousel caption styles retained for compatibility. */
 .carousel-caption {
   font-family: "NTR", sans-serif;
   max-width: 500px;

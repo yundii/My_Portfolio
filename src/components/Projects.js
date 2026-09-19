@@ -6,12 +6,6 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import Carousel from "react-bootstrap/Carousel";
 import ExternalLinks from "./ExternalLinks";
 
-function getYouTubeID(url) {
-  const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|&v=)([^#&?]*).*/;
-  const match = url.match(regExp);
-  return (match && match[2].length === 11) ? match[2] : null;
-}
-
 class Projects extends React.Component {
   constructor() {
     super();
@@ -40,10 +34,10 @@ class Projects extends React.Component {
       "InvestNexus": {
         title: "InvestNexus",
         desc:
-          "Real-time investment dashboard with React, Node.js, MySQL, and Prisma. Integrated Redis caching and WebSocket to reduce latency by 60%, deployed on AWS EC2 with Auto Scaling for optimal performance.",
-        techStack: "REACT, NODE.JS, MYSQL, PRISMA, REDIS, AWS, WEBSOCKET",
+          "A mini investment-management platform spanning decisions, partial fills, settlement, ledger-derived positions, market valuation, reconciliation, performance, and client reporting.",
+        techStack: "REACT, TYPESCRIPT, NODE.JS, POSTGRESQL, PLAYWRIGHT, GITHUB PAGES",
         link: "https://github.com/yundii/InvestNexus",
-        open: "https://www.youtube.com/watch?v=M2_N8s5u4L8",
+        open: "https://yundii.github.io/InvestNexus/",
         image: "/assets/InvestNexus.jpg"
       },
       "Spark": {
@@ -74,10 +68,12 @@ class Projects extends React.Component {
         open: "https://yundii.github.io/pulse-lab/"
       },
       "InvestNexus": {
-        desc: "Developed a scalable backend architecture with Node.js and Prisma ORM, implementing efficient database queries and API optimization to handle 3,000+ concurrent users with 98% uptime on AWS EC2.",
-        techStack: "React, Node.js, MySQL, Prisma, AWS EC2, Redis, WebSocket",
+        desc:
+          "Built an end-to-end investment-management MVP with transactional order and settlement workflows, immutable financial records, market-data valuation, certified reconciliation, performance history, and client report export. Includes a one-command local stack and an interactive browser demo with complete workflow tests.",
+        techStack:
+          "React, TypeScript, Node.js, PostgreSQL, Redis, RabbitMQ, Playwright, GitHub Actions, GitHub Pages",
         link: "https://github.com/yundii/InvestNexus",
-        open: "https://www.youtube.com/watch?v=M2_N8s5u4L8"
+        open: "https://yundii.github.io/InvestNexus/"
       },
       "Spark": {
         desc:
