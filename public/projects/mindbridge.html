@@ -6,6 +6,7 @@
 <p class="eyebrow">AI APPLICATION ENGINEERING / V2 PROTOTYPE</p><h1>MindBridge<span style="color:#64ffda">.</span></h1>
 <p class="lead">A student wellbeing platform that connects supportive conversations with a traceable safety workflow.</p>
 <div class="tags"><span>Java 17</span><span>Spring Boot</span><span>Spring AI</span><span>Spring Security</span><span>Reactor SSE</span><span>H2 / MySQL</span><span>Apache POI</span></div>
+<p><a href="/demos/mindbridge/">Try the interactive browser demo ↗</a> &nbsp; · &nbsp; <a href="https://github.com/yundii/mindbridge">View source on GitHub ↗</a></p><p>The public demo simulates chat, reports, and alerts entirely in your browser. It does not run the Java backend or call an AI model.</p>
 <div class="hero"><img src="/assets/mindbridge.svg" alt="An illustrated plant connecting conversation and support"></div>
 <section><h2>From a conversation to a reliable workflow</h2><p>I built MindBridge to explore how agent-based applications can separate everyday conversation from consultation and safety concerns. The V2 prototype combines an English student interface with an administrator workspace for knowledge cards, screening reports, Excel records, and local alerts.</p></section>
 <section class="grid" aria-label="Implemented capabilities">
@@ -17,5 +18,5 @@
 <section><h2>The business flow</h2><div class="flow"><p>Student → Memory → Supervisor</p><p><b>CHAT</b> → Companion → Streamed reply</p><p><b>CONSULT / RISK</b> → Knowledge → Risk guardian → Counselor → Streamed reply</p><p><b>RISK workflow</b> → Saved report → Excel success → Local notification record</p></div></section>
 <section><h2>Built to be verified</h2><p>Seventeen automated tests cover authentication, cross-student access, routing, report suppression for ordinary chat, streaming persistence, model failures, cancellation, tool ordering, retries, restart recovery, and Excel string-cell safety. The student and administrator flows were also exercised in the browser.</p></section>
 <section class="note"><h2>Prototype scope</h2><p>This is an engineering demonstration using synthetic data, not a clinical service. Screening uses transparent rules; alerts stay local and do not contact a counselor. MySQL configuration is included, while the tested local setup uses H2. LoRA fine-tuning, ChromaDB hybrid retrieval, MCP adapters, and external notification delivery are planned work. No clinical-accuracy or performance-improvement percentages are claimed.</p></section>
-<footer>Designed and built by Yundi Tao · Source repository is private · <a href="/#projects">Explore more projects ↗</a></footer>
+<footer>Designed and built by Yundi Tao · <a href="https://github.com/yundii/mindbridge">Public source on GitHub ↗</a> · <a href="/#projects">Explore more projects ↗</a></footer>
 </main></body></html>

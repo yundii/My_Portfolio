@@ -27,7 +27,8 @@ class Projects extends React.Component {
         desc:
           "A student wellbeing agent platform with role-based access, streamed conversations, knowledge retrieval, and an auditable safety workflow from screening reports to Excel and local alerts.",
         techStack: "JAVA, SPRING BOOT, SPRING AI, SPRING SECURITY, REACTOR, SQL",
-        open: "/projects/mindbridge.html",
+        link: "https://github.com/yundii/mindbridge",
+        open: "/demos/mindbridge/",
         image: "/assets/mindbridge.svg"
       },
       "Pulse Lab": {
@@ -72,7 +73,8 @@ class Projects extends React.Component {
         desc:
           "Built a student wellbeing MVP with bounded CHAT / CONSULT / RISK agent routing, BM25 retrieval, and Ollama / OpenAI adapters. Added student/admin isolation and a durable Excel-to-alert workflow with retries, deduplication, and execution history. Verified with 17 automated tests.",
         techStack: "Java, Spring Boot, Spring AI, Spring Security, Reactor SSE, H2 / MySQL, Apache POI",
-        open: "/projects/mindbridge.html"
+        link: "https://github.com/yundii/mindbridge",
+        open: "/demos/mindbridge/"
       },
       "Pulse Lab": {
         desc:

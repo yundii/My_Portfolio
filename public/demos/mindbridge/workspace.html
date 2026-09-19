@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f5f4f0"><title>MindBridge — A little space for you</title><link rel="stylesheet" href="styles.css"><script defer src="workbook.js"></script><script defer src="demo-api.js"></script><script defer src="app.js"></script></head>
+<body class="loading-profile"><div class="demo-banner"><strong>Browser simulation</strong><span>Template responses · synthetic data only · no backend, AI model, or real notifications</span><a href="index.html">Switch role</a><button id="reset-demo" type="button">Reset demo</button></div>
+<aside class="sidebar">
+ <a class="brand" href="index.html"><span class="brand-mark">m<span>↗</span></span>mindbridge<span class="brand-dot">.</span></a>
+ <div class="workspace-label">YOUR WELLBEING SPACE</div>
+ <nav aria-label="Main navigation">
+  <button class="nav-item selected" data-view="chat"><span>◌</span> Daily check-in <i>01</i></button>
+  <button class="nav-item" data-view="knowledge"><span>▤</span> Resource library <i>02</i></button>
+  <button class="nav-item" data-view="alerts"><span>♧</span> Support desk <i id="alert-count">0</i></button>
+ </nav>
+ <div id="session-list" class="session-list"></div><div class="sidebar-note"><div class="little-flower">✳</div><h3>Small steps.<br>More room to breathe.</h3><p>You don’t need to have it all figured out to start a conversation.</p></div>
+ <div class="local-status"><span class="status-dot"></span><div>Browser-only demo<small id="provider-label">Connecting…</small></div><span>↗</span></div>
+</aside>
+<main>
+ <header><span>STUDENT WELLBEING <span class="header-slash">/</span> <span id="page-label">DAILY CHECK-IN</span></span><div class="header-right"><span id="account-name"></span><button id="logout" class="subtle-button">Switch role</button><span class="demo-pill">MVP · DEMO</span><span class="avatar">S</span></div></header>
+ <section id="chat-view" class="view">
+  <div class="intro"><div><p class="eyebrow">A MOMENT, JUST FOR YOU</p><h1>How are you <em>really</em> doing?</h1><p class="subtitle">A space to untangle your thoughts. One conversation at a time.</p></div><button id="new-session" class="subtle-button">＋ New conversation</button></div>
+  <div class="main-grid"><section class="chat-panel">
+   <div class="chat-heading"><div class="assistant-icon">✳</div><div><strong>Your daily check-in</strong><span>A listening ear, whenever you need one</span></div><span class="available"><span class="status-dot"></span> Here for you</span></div>
+   <div id="messages" class="messages" role="log" aria-live="polite" aria-label="Conversation">
+    <div class="welcome"><span class="welcome-label">LET’S START WHERE YOU ARE</span><h2>There’s no right way<br>to feel today.</h2><p>Tell me what’s on your mind, or pick a starting point below.</p><div class="suggestions"><button data-prompt="I have been feeling stressed about exams lately.">Exams feel overwhelming <span>↗</span></button><button data-prompt="I feel lonely and a little sad lately.">I’ve been feeling a bit low <span>↗</span></button><button data-prompt="I want to reflect on my day.">Just checking in <span>↗</span></button></div></div>
+   </div>
+   <form id="chat-form"><label class="sr-only" for="message">What’s on your mind?</label><div class="input-wrap"><textarea id="message" rows="2" maxlength="4000" placeholder="You can start anywhere…" required></textarea><button id="send" type="submit" aria-label="Send message">↑</button></div><div class="composer-meta"><span>A small step is still a step.</span><span>Enter to send · Shift + Enter for a new line</span></div></form>
+  </section>
+  <aside class="right-column">
+   <article class="moment-card"><span class="card-eyebrow">A GENTLE REMINDER</span><div class="plant-art" aria-hidden="true"><div class="stem"></div><i class="leaf l1"></i><i class="leaf l2"></i><i class="leaf l3"></i><i class="leaf l4"></i><div class="plant-circle"></div></div><h2>Growth doesn’t<br>have to be loud.</h2><p>Sometimes, it’s simply making<br>space for how you feel.</p><span class="card-number">01 — PAUSE & REFLECT</span></article>
+   <article class="insight-card"><div class="card-title">Your conversation <span>◌</span></div><p id="insight-placeholder">A space for your check-in.</p><div id="insight" hidden><p id="route-note"></p><div id="sources"></div></div><button id="download-report" class="text-button">Export transcript <span>↗</span></button></article>
+  </aside></div>
+  <div class="disclaimer"><span>ⓘ</span><p>MindBridge is a wellbeing demo, not a therapist or emergency service. Consultation and safety check-ins create reports visible to the administrator. Screening can miss or misread risk. Alerts stay in this local app; no counselor is notified. If you’re in immediate danger, contact local emergency services.</p></div>
+ </section>
+ <section id="knowledge-view" class="view" hidden><div class="intro"><div><p class="eyebrow">A LITTLE SUPPORT TO TAKE WITH YOU</p><h1>Your resource <em>library.</em></h1><p class="subtitle">Short reflections from the demo knowledge base. Not clinical guidance.</p></div></div><form id="knowledge-form" class="resource" hidden><h2 id="knowledge-form-title">Add a knowledge card</h2><input type="hidden" name="id"><label>Title<input name="title" maxlength="160" required></label><label>Reference / source<input name="source" maxlength="200" required></label><label>Search tags<input name="tags" maxlength="500"></label><label>Content<textarea name="content" maxlength="12000" rows="4" required></textarea></label><button class="primary-button" type="submit">Save card</button><button id="cancel-card-edit" class="subtle-button" type="button" hidden>Cancel edit</button></form><div id="knowledge-grid" class="knowledge-grid"></div></section>
+ <section id="alerts-view" class="view" hidden><div class="intro"><div><p class="eyebrow">LOCAL DEMO WORKSPACE</p><h1>The support <em>desk.</em></h1><p class="subtitle">Review rule-triggered alerts. No real counselor or external notification is connected.</p></div><button id="refresh-alerts" class="subtle-button">↻ Refresh</button></div><div id="stats" class="stats"></div><div class="desk-actions"><button id="download-excel" class="subtle-button">Export simulated ledger ↗</button><span>Simulated ledger → simulated notification. No external delivery.</span></div><h2 class="section-heading">Screening reports & tool execution</h2><button id="fail-next" class="subtle-button">Simulate next ledger failure</button><p id="failure-note"></p><div id="reports-list"></div><h2 class="section-heading">Safety alerts</h2><div id="alerts-list"></div></section>
+ <div id="notice" role="status" hidden></div>
+ <footer><span>MINDBRIDGE</span><span>A little connection goes a long way.</span><span>Built with care ↗</span></footer>
+</main>
+</body></html>
